@@ -14,7 +14,7 @@ type FetchSpotifyApiArgs = {
 const fetchSpotifyApi = async <TSpotifyApiType extends object>({
   endpoint,
   accessToken,
-  params = {},
+  params = {locale: "ko_KR"},
   onError,
 }: FetchSpotifyApiArgs) => {
   try {
